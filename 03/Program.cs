@@ -4,7 +4,10 @@
 double[] FillingArray(int n)
 {
     double[] arr1 = new double[n];
-    for (int i1 = 0; i1 < n; i1++) arr1[i1] = new Random().Next(1, 100);
+    for (int i1 = 0; i1 < n; i1++) 
+    {
+        arr1[i1] = new Random().NextDouble()*(100+1)-1;
+    }
     return arr1;
 }
 
